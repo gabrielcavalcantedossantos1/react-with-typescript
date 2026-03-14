@@ -1,10 +1,7 @@
-import type { ReactNode } from "react";
-
-type CourseGoalProps = {
+type CourseGoalProps = React.PropsWithChildren<{
   title: string;
   description: string;
-  children?: ReactNode;
-};
+}>;
 
 export function CourseGoal({ title, description, children }: CourseGoalProps) {
   return (
