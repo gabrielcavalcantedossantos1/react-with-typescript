@@ -11,7 +11,7 @@ type HeaderProps = {
 export function Header({ image, children }: HeaderProps) {
   return (
     <header>
-      <img src={image.src} alt={image.alt} />
+      <img {...image}/>
       {children}
     </header>
   );

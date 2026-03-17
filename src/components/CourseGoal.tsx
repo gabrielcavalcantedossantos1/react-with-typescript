@@ -10,7 +10,6 @@ export function CourseGoal({ title, description, children }: CourseGoalProps) {
         <h2>{title}</h2>
         <p>{description}</p>
       </div>
-      <button>Deletar</button>
       {children}
     </article>
   );
